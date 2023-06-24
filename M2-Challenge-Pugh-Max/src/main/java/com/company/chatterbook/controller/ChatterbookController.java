@@ -45,12 +45,7 @@ public class ChatterbookController {
         userList = Arrays.asList(luis, sue, timothy, george, arturo, mariella, paolo, tri, jane, carol, carl);
 
     }
-    /*
-    The API needs to provide a GET route for each of the following (remember, each route path must be unique):
-    A list of all users
-    A single user by username
-    A list of chatterPosts for a user by username
-     */
+
 
 //    Route to get all users
 //    Http method: GET
@@ -70,6 +65,7 @@ public class ChatterbookController {
         return userList.stream().filter(user -> user.getName().equals(name)).findFirst();
     }
 
+
 //    Route to get a list of chatterPosts for a user by username
 //    Http method: GET
 //    uri: /users/posts/{name}
@@ -82,7 +78,6 @@ public class ChatterbookController {
             return null;
         }
         return user.get().getChatterPosts();
-
     }
 
 }
