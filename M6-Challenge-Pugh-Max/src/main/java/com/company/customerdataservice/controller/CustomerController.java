@@ -15,22 +15,6 @@ import java.util.Optional;
 public class CustomerController {
 
 
-    /*
-    As a user, I would like to be able to filter customers by state.
-
-    As a user, I would like to be able to find a specific customer by id.
-
-    As a user, I would like to be able to delete customers.
-
-    As a user, I would like to be able to edit customers.
-
-    As a user, I would like to be able to add new customers
-
-
-     */
-
-
-
     @Autowired
     CustomerRepository repo;
 
@@ -48,6 +32,7 @@ public class CustomerController {
     @ResponseStatus(HttpStatus.OK)
     public List<Customer> getCustomers(){return repo.findAll();}
 
+//    Read By ID
     @GetMapping("/customers/{id}")
     @ResponseStatus(HttpStatus.OK)
     public Customer getCustomerById(@PathVariable int id){
@@ -87,7 +72,7 @@ public class CustomerController {
 
 
 //    D ELETE
-    @DeleteMapping("customers/{id}")
+    @DeleteMapping("/customers/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void deleteCustomer(@PathVariable int id){
         repo.deleteById(id);
@@ -97,4 +82,14 @@ public class CustomerController {
 
 
 //    Custom queries
+    /*
+    As a user, I would like to be able to filter customers by state.
+
+     */
+    @GetMapping("/customers/state/{state}")
+    @ResponseStatus(HttpStatus.OK)
+    public List<Customer> findByState(@PathVariable String state){
+        return repo.findByState(state);
+    }
+
 }
