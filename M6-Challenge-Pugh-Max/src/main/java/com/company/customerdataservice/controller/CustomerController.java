@@ -84,8 +84,7 @@ public class CustomerController {
 //    Custom queries
     /*
     As a user, I would like to be able to filter customers by state.
-
-     */
+=     */
     @GetMapping("/customers/state/{state}")
     @ResponseStatus(HttpStatus.OK)
     public List<Customer> findByState(@PathVariable String state){

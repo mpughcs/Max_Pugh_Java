@@ -12,7 +12,7 @@ import java.util.Objects;
 public class Customer implements Serializable {
 
     @Id
-    @Column(name = "album_id")
+    @Column(name = "customer_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
