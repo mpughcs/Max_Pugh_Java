@@ -8,7 +8,9 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -104,16 +106,32 @@ class CustomerRepositoryTest {
     }
 
 
-//    QUESTION: HOW WOULD THIS TEST DIFFER FROM CREATING AN
-//    @Test
-//    public void shouldFindCustomerById(){
-//        repo.save(c);
-//
-//        Optional<Customer> retrievedCustomerOptional = repo.findById(c.getId());
-//
-//
-//
-//    }
+
+    @Test
+    public void shouldFindCustomerById(){
+        repo.save(c);
+        Optional<Customer> c1 = repo.findById(c.getId());
+        assertEquals(c1.get(), c);
+    }
+
+    @Test
+    public void shouldFindCustomerByState(){
+        List<Customer> expectedOutput = new ArrayList<>();
+        repo.save(c);
+
+        c.setId(c.getId()+1);
+        c.setState("MO");
+        expectedOutput.add(c);
+        repo.save(c);
+
+        c.setId(c.getId()+1);
+        c.setState("MO");
+        expectedOutput.add(c);
+        repo.save(c);
+
+        assertEquals(expectedOutput.size(),2);
+    }
+
 
 
 
