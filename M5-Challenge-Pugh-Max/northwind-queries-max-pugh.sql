@@ -11,7 +11,7 @@ WHERE p.product_name  LIKE '%dell%';
 -- List all orders with with 'Pennsylvania' as their ship_state
 SELECT *
 FROM orders o 
-WHERE o.ship_state = 'pennsylvania'
+WHERE o.ship_state = 'pennsylvania';
 
 
 -- select first name and last name of all epmployees who's last name begins with 'W'
@@ -22,7 +22,7 @@ WHERE last_name LIKE 'w%';
 -- list all customers who's zip codes begin in '55'
 SELECT * 
 FROM customers c 
-WHERE c.postal_code LIKE "55%"
+WHERE c.postal_code LIKE "55%";
 
 -- list all customers who's zip codes end in '0'
 SELECT *
