@@ -28,49 +28,49 @@ In this project, you will work together with a team to build a REST API to manag
 
 The Bookstore web service manages inventory for a bookstore. The REST APIs in this project allow callers to perform the following actions:
 
-- [ ] Create, Read, Update, and Delete Books.
-- [ ] Create, Read, Update, and Delete Authors.
-- [ ] Create, Read, Update, and Delete Publishers.
-- [ ] Find Books by a given Author.
+- [x] Create, Read, Update, and Delete Books.
+- [x] Create, Read, Update, and Delete Authors.
+- [x] Create, Read, Update, and Delete Publishers.
+- [x] Find Books by a given Author.
 
 ### User Stories
 
-- [ ] As an API user, I would like to create, read, update, and delete authors.
-- [ ] As an API user, I would like to create, read, update, and delete publishers.
-- [ ] As an API user, I would like to create, read, update, and delete books.
-- [ ] As an API user, I would like to find all books by a given author.
+- [x] As an API user, I would like to create, read, update, and delete authors.
+- [x] As an API user, I would like to create, read, update, and delete publishers.
+- [x] As an API user, I would like to create, read, update, and delete books.
+- [x] As an API user, I would like to find all books by a given author.
 
 ### Requirements for Book API
 
-- **Book API** (25%):
-    - [ ] Code is clean and follows general patterns as presented in class.
-    - [ ] Implementation of Book model.
-    - [ ] Implementation of Book repository and controller for the following actions:
-        - [ ] Create
-        - [ ] Read by Id
-        - [ ] Read All
-        - [ ] Update
-        - [ ] Delete
-        - [ ] Search Book by Author Id
-    - [ ] Test of Book repository and MockMvc test cases for the following actions:
-        - [ ] Create
-        - [ ] Read by Id
-        - [ ] Read All
-        - [ ] Update
-        - [ ] Delete
-        - [ ] Search Book by Author Id
+- **Book API** :
+    - [x] Code is clean and follows general patterns as presented in class.
+    - [x] Implementation of Book model.
+    - [x] Implementation of Book repository and controller for the following actions:
+        - [x] Create
+        - [x] Read by Id
+        - [x] Read All
+        - [x] Update
+        - [x] Delete
+        - [x] Search Book by Author Id
+    - [x] Test of Book repository and MockMvc test cases for the following actions:
+        - [x] Create
+        - [x] Read by Id
+        - [x] Read All
+        - [x] Update
+        - [x] Delete
+        - [x] Search Book by Author Id
 
 ### Requirements for Author API
 
-- **Author API** (25%):
-    - [ ] Code is clean and follows general patterns as presented in class
-    - [ ] Implementation of Author model
-    - [ ] Implementation of Author repository and controller for the following actions:
-        - [ ] Create
-        - [ ] Read by Id
-        - [ ] Read All
-        - [ ] Update
-        - [ ] Delete
+- **Author API** :
+    - [x] Code is clean and follows general patterns as presented in class
+    - [x] Implementation of Author model
+    - [x] Implementation of Author repository and controller for the following actions:
+        - [x] Create
+        - [x] Read by Id
+        - [x] Read All
+        - [x] Update
+        - [x] Delete
     - [ ] Test of Author repository and MockMvc test cases for the following actions:
         - [ ] Create
         - [ ] Read by Id
@@ -80,21 +80,21 @@ The Bookstore web service manages inventory for a bookstore. The REST APIs in th
 
 ### Requirements for Publisher API
 
-- **Publisher API** (25%):
-    - [ ] Code is clean and follows general patterns as presented in class
-    - [ ] Implementation of Publisher model
-    - [ ] Implementation of Publisher repository and controller for the following actions:
-        - [ ] Create
-        - [ ] Read by Id
-        - [ ] Read All
-        - [ ] Update
-        - [ ] Delete
-    - [ ] Test of Publisher repository and MockMvc test cases for the following actions:
-        - [ ] Create
-        - [ ] Read by Id
-        - [ ] Read All
-        - [ ] Update
-        - [ ] Delete
+- **Publisher API** :
+    - [x] Code is clean and follows general patterns as presented in class
+    - [x] Implementation of Publisher model
+    - [x] Implementation of Publisher repository and controller for the following actions:
+        - [x] Create
+        - [x] Read by Id
+        - [x] Read All
+        - [x] Update
+        - [x] Delete
+    - [x] Test of Publisher repository and MockMvc test cases for the following actions:
+        - [x] Create
+        - [x] Read by Id
+        - [x] Read All
+        - [x] Update
+        - [x] Delete
 
 ---
 
@@ -102,20 +102,20 @@ The Bookstore web service manages inventory for a bookstore. The REST APIs in th
 
 Your project must support GraphQL queries to retrieve the following information:
 
-- [ ] Get a publisher by id.
+- [x] Get a publisher by id.
     - Including books for the publisher and authors for the books.
-- [ ] Get an author by id.
+- [x] Get an author by id.
     - Including books by the author.
-- [ ] Get a book by id.
+- [x] Get a book by id.
     - Including the author and publisher of the book.
 
-### Requirements for GraphQL (15%):
+### Requirements for GraphQL :
 
 - **GraphQL** (15%):
-    - [ ] Implementation of:
-        - [ ] Find Publisher by Id (Including books for the publisher and authors for the books).
-        - [ ] Find Author by Id (Including books by the author).
-        - [ ] Find Book by Id (Including the author and publisher of the book).
+    - [x] Implementation of:
+        - [x] Find Publisher by Id (Including books for the publisher and authors for the books).
+        - [x] Find Author by Id (Including books by the author).
+        - [x] Find Book by Id (Including the author and publisher of the book).
 
 ---
 
@@ -123,8 +123,8 @@ Your project must support GraphQL queries to retrieve the following information:
 
 Create a 1 to 3-minute video summary of your project that meets the following requirements:
 
-- [ ] Video should be created in MP4 format.
-- [ ] Video should include screen-capture recordings to highlight the sections of the project that are important in meeting the project requirements.
+- [x] Video should be created in MP4 format.
+- [x] Video should include screen-capture recordings to highlight the sections of the project that are important in meeting the project requirements.
 
 ---
 
