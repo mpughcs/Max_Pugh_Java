@@ -1,8 +1,8 @@
 
 # Bookstore REST API - README
-In this project, you will work together with a team to build a REST API to manage inventory for a bookstore. You will also provide support for querying with GraphQL. In addition, you will produce a 1–3 minute video summary of the project. The requirements and features are detailed below.
-
----
+In this project, Frankie Ortiz and I worked together build a REST API to manage inventory for a bookstore. We provided support for querying with GraphQL, and 
+recorded a short video demo showing off the project which can be found below. 
+# [Link to Video Demo!!](https://youtu.be/m_0QMZ2F4DE)
 
 ## General Setup and Format
 
@@ -71,12 +71,12 @@ The Bookstore web service manages inventory for a bookstore. The REST APIs in th
         - [x] Read All
         - [x] Update
         - [x] Delete
-    - [ ] Test of Author repository and MockMvc test cases for the following actions:
-        - [ ] Create
-        - [ ] Read by Id
-        - [ ] Read All
-        - [ ] Update
-        - [ ] Delete
+    - [x] Test of Author repository and MockMvc test cases for the following actions:
+        - [x] Create
+        - [x] Read by Id
+        - [x] Read All
+        - [x] Update
+        - [x] Delete
 
 ### Requirements for Publisher API
 
